@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1034458039576",
+    "project_id": "animal-resource-allocator",
+    "storage_bucket": "animal-resource-allocator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034458039576:android:aa3c71968835a48bb18a6d",
+        "android_client_info": {
+          "package_name": "com.example.animal_shelter_resource_allocator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034458039576-9pakprfhlpqm3qfmls7gmq4q84kjpi7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDGUFEr04XwzMiGgZXgorKJ3SVTnMiGA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034458039576-9pakprfhlpqm3qfmls7gmq4q84kjpi7m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1034458039576-9488c4m5ma757f53amq7lsk0u73fjqlk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.animalShelterResourceAllocator"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
