@@ -100,7 +100,7 @@ class _VolunteerProfileFormState extends State<VolunteerProfileForm> {
           const LocationInputWidget(),
           const SizedBox(height: 16),
           ElevatedButton(
-            onPressed: () async {
+            onPressed: () {
               if (_formKey.currentState != null &&
                   _formKey.currentState!.validate()) {
                 // Save data
@@ -128,13 +128,14 @@ class _VolunteerProfileFormState extends State<VolunteerProfileForm> {
                   resources: trimmedServices,
                 );
                 final db = FirebaseFirestore.instance;
-                await db
+                db
                     .collection("users")
                     .doc(newVolunteer.id)
-                    .set(newVolunteer.toFirestore());
-                Globals.hasProfile = true;
-                print(newVolunteer);
-                Navigator.pushNamed(context, '/volunteer_home');
+                    .set(newVolunteer.toFirestore())
+                    .then((value) {
+                  Globals.hasProfile = true;
+                  Navigator.pushNamed(context, '/volunteer_home');
+                });
               }
             },
             child: const Text('Save'),
