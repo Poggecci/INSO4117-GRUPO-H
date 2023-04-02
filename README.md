@@ -12,7 +12,7 @@
 ## Installation
 1. Clone the repo
 2. cd into `animal_shelter_resource_allocator`
-3. run `dart pub get` 
+3. run `dart pub get` in the terminal
 4. run `flutter run` in the terminal
 5. Select web deployment (chrome is our target right now)
 ### OPTIONAL
